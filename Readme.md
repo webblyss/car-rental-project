@@ -26,9 +26,16 @@ To run this project on your local machine, you must have Python 3.x and Django 3
 
 
 
+# This the how the app looks like
 
 
 
+![Screenshot from 2023-05-11 08-35-26](https://github.com/webblyss/car-rental-project/assets/60282806/ee0ea627-58c8-479a-97c0-3055d080ccaa)
 
+![Screenshot from 2023-05-11 08-35-44](https://github.com/webblyss/car-rental-project/assets/60282806/f01703e1-9479-4a61-98f2-681f8fa944f8)
+
+![Screenshot from 2023-05-11 08-36-09](https://github.com/webblyss/car-rental-project/assets/60282806/d1c6b8bf-04a7-48e9-8599-d7e6fcee676b)
+
+![Screenshot from 2023-05-11 08-36-39](https://github.com/webblyss/car-rental-project/assets/60282806/388f1ad7-8518-4f1b-9bd7-564d96763e67)
 
 
