@@ -19,10 +19,11 @@ class Rental(models.Model):
     customer_name = models.CharField(max_length=100)
     customer_email = models.EmailField()
     customer_phone = models.CharField(max_length=20)
+    customer_age = models.CharField(max_length=200)
+    customer_licenses = models.CharField(max_length=100)
     start_date = models.DateField()
     end_date = models.DateField() 
     car = models.ForeignKey(Car, on_delete=models.CASCADE)
-
 
 
     def __str__(self) -> str:
