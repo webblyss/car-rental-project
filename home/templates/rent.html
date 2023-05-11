@@ -1,0 +1,70 @@
+{% load static %}
+{% include 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+
+{% block content %}
+
+<div class="container">
+    <h1>Car Rental Detail Page</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{% static 'images/img-3.png' %}" alt="Car Image" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2>Car Details</h2>
+        <p><strong>Make:</strong> Honda</p>
+        <p><strong>Model:</strong> Civic</p>
+        <p><strong>Year:</strong> 2021</p>
+        <p><strong>Color:</strong> Black</p>
+        <p><strong>Price per day:</strong> $50</p>
+
+        <hr>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" name="pickup-date" id="pickup-date" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="return-date">Return Date:</label>
+            <input type="date" name="return-date" id="return-date" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="driver-age">Driver's Age:</label>
+            <input type="number" name="driver-age" id="driver-age" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="driver-age">Driver's Licenses</label>
+            <input type="text" name="driver-Licenses" id="driver-Licenses" class="form-control" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Rent Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

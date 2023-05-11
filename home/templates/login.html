@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login - Car Rental</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center mb-4">
+              <img src="{% static 'images/img-3.png' %}" alt="car image">
+              <h1 class="card-title mt-2">Car Rental</h1>
+            </div>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="form-control" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
+            </form>
+
+            <div class="text-center mt-4">
+              <p class="mb-0">Don't have an account?</p>
+              <a href="#" class="btn btn-outline-primary">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</body>
+</html>
