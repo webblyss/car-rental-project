@@ -4,9 +4,9 @@ from .views import home,rent
 
 app_name = 'home'
 
-urlpatterns = [
+urlpatterns = [ 
     path('',home,name = 'home'),
-    path('rent',rent,name='rent')
+    path('rent/<int:pk>/',rent,name='rent')
 ]
 
 

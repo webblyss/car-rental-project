@@ -1,25 +1,18 @@
 from django.shortcuts import render
-from .forms import RentalForm
+from .models import Car
 # Create your views here.
 
 
 def home(request):
+    car = Car.objects.all()
+    return render(request,'index.html',{'car':car})
 
 
-    return render(request,'index.html',{})
 
+def rent(request,pk):
 
+    car = Car.objects.get(pk=pk)
 
-def rent(request):
-
-    if request.method == 'POST':
-        form = RentalForm(request.POST)
-        if form.is_valid():
-            form.save()
-        
-    else:
-        form = RentalForm()
-
-    return render(request,'rent.html',{'form': form})
+    return render(request,'rent.html',{'data':car})
 
 

@@ -137,30 +137,20 @@
       </div>
       <div class="gallery_section_2">
          <div class="row">
+            
+            {% for data in car %}
+            
             <div class="col-md-4">
                <div class="gallery_box">
-                  <div class="gallery_img"><img src="{% static 'images/img-1.png' %}"></div>
-                  <h3 class="types_text">Toyota car</h3>
-                    <p class="looking_text">Start per day $4500</p>
-                  <div class="read_bt"><a href="{% url 'home:rent' %}">Book Now</a></div>
+                  <div class="gallery_img"><img src="{{data.image.url}}"></div>
+                  <h3 class="types_text">{{data.model}}</h3>
+                    <p class="looking_text">Start per day ${{data.price}}</p>
+                  <div class="read_bt"><a href="{% url 'home:rent'  pk=data.id  %}">Book Now</a></div>
                </div>
             </div>
-            <div class="col-md-4">
-               <div class="gallery_box">
-                  <div class="gallery_img"><img src="{% static 'images/img-2.png' %}"></div>
-                  <h3 class="types_text">Toyota car</h3>
-                    <p class="looking_text">Start per day $4500</p>
-                  <div class="read_bt"><a href="#">Book Now</a></div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="gallery_box">
-                  <div class="gallery_img"><img src="{% static 'images/img-3.png' %}"></div>
-                  <h3 class="types_text">Toyota car</h3>
-                    <p class="looking_text">Start per day $4500</p>
-                  <div class="read_bt"><a href="#">Book Now</a></div>
-               </div>
-            </div>
+            {% endfor %}
+
+
          </div>
       </div>
       
